@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML1 XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DR/xhtml1-strict.dtd">
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <title>Expense Tracker</title>
+</head>
+<body>
+  <div id="header">
+    <h1>Expense Tracker (v1.0)</h1>
+  </div>
+
+  <div id="trips-list">
+    <button id="new-trip-btn">Add New Trip</button>
+    <ul id="available-trips">
+      <li><a href="#">Trip 1</a></li>
+      <li><a href="#">Trip 2</a></li>
+      <li><a href="#">Trip 3</a></li>
+      <li><a href="#">Trip 4</a></li>
+      <li><a href="#">Trip 5</a></li>
+    </ul>
+  </div>
+
+  <div id="new-trip-form">
+    <label>Trip Title: </label><input type="text">
+    <hr>
+    <ul class="group-list">
+      <li>
+        <label>Name:</label><input type="text" class="name" placeholder="Name"><br>
+        <label>Phone:</label><input type="text" class="phone" placeholder="Phone Number">
+      </li>
+      <li>
+        <label>Name:</label><input type="text" class="name" placeholder="Name"><br>
+        <label>Phone:</label><input type="text" class="phone" placeholder="Phone Number">
+      </li>
+    </ul>
+    <button id="add-new-member">Add Another Member</button>
+    <button id="submit-group">Submit</button>
+  </div>
+
+  <div id="trip-overview">
+    <h1>Auli</h1>
+    <h2>Available Expenses</h2>
+    <ul>
+      <li>
+        <a href="#">
+          <span>Description</span>
+          <span>=></span>
+          <span>Amount</span>
+        </a>
+      </li>
+    </ul>
+    <button id="add-new-expense">Add New Expense</button>
+    <button id="end-trip">End Trip</button>
+  </div>
+
+  <div id="expense-detail-form">
+    <label>Who Paid:</label>
+    <select class="group-members">
+      <option value="Duby">Duby</option>
+      <option selected value="Vishnu">Vishnu</option>
+      <option value="Object">Object</option>
+    </select>
+    <br>
+    <label>Description:</label>
+    <input type="text" class="description">
+    <br>
+    <label>Amount Paid:</label>
+    <input type="text" class="amount">
+    <br>
+    <label>Paid For:</label>
+    <!--Depending on who paid, make other group members available as check boxes-->
+    <ul>
+      <li><input type="checkbox" value="Vishnu"><span>Vishnu</span></li>
+      <li><input type="checkbox" value="Duby"><span>Duby</span></li>
+      <li><input type="checkbox" value="Object"><span>Object</span></li>
+      <li><input type="checkbox" value="Aroj"><span>Aroj</span></li>
+    </ul>
+    <button id="submit-expense">Submit</button>
+  </div>
+
+  <div id="expense-details">
+    <!--All the above fields of expense detail form but disabled, Give option to Edit which may enable the fields and let use submit details to model-->
+    <label>Who Paid:</label>
+    <select class="group-members">
+      <option value="Duby">Duby</option>
+      <option selected value="Vishnu">Vishnu</option>
+      <option value="Object">Object</option>
+    </select>
+    <br>
+    <label>Description:</label>
+    <input type="text" class="description">
+    <br>
+    <label>Amount Paid:</label>
+    <input type="text" class="amount">
+    <br>
+    <label>Paid For:</label>
+    <!--Depending on who paid, make other group members available as check boxes-->
+    <ul>
+      <li><input type="checkbox" value="Vishnu"><span>Vishnu</span></li>
+      <li><input type="checkbox" value="Duby"><span>Duby</span></li>
+      <li><input type="checkbox" value="Object"><span>Object</span></li>
+      <li><input type="checkbox" value="Aroj"><span>Aroj</span></li>
+    </ul>
+    <button id="Back">Back</button>
+  </div>
+
+</body>
+<script type = "text/javascript" src="./lib/zepto.min.js"></script>
+</html>
