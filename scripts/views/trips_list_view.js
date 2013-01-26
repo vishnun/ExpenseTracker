@@ -1,4 +1,4 @@
-var tripsList = (function(){
+var tripsListView = (function(){
   var instance,
   init = function(){
     var models = [],
@@ -7,6 +7,7 @@ var tripsList = (function(){
     bindEventListeners = function(){
       $("#add-new-trip-btn").on('click',function(){
         navigator.changePage("new-trip-form");
+        var trip = newTripView.getInstance();
       });
     };
     bindEventListeners();

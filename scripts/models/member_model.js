@@ -1,4 +1,4 @@
-Member = function(){
+var MemberModel = function(){
   var memberDetails={};
   return {
     setName: function(name){

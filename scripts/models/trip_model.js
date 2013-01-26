@@ -1,5 +1,5 @@
 //Using Module pattern for Models
-var Trip = function(){
+var TripModel = function(){
   var trip = {};
   trip.group = [];
   trip.expenses = [];

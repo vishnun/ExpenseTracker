@@ -1,4 +1,4 @@
-var Expense = function(){
+var ExpenseModel   = function(){
   var expenseDetails = {};
   expenseDetails.paidForMembers = [];
   return {

@@ -1,4 +1,4 @@
-var TripsList = function(){
+var TripsListModel = function(){
   var Trips = [];
   return {
     addTrip: function(trip){
