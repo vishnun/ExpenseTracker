@@ -1,29 +1,17 @@
 //Using Module pattern for Models
-var ExpenseTracker ={};
-ExpenseTracker.member=(function(){
-  var memberDetails={};
+var Trip = function(){
+  var trip = {};
+  trip.group = [];
+  trip.expenses = [];
   return {
-    setName: function(name){
-      memberDetails.name = name;
+    setTripName: function(tripName){
+      trip.tripname = tripName;
     },
-    getName: function(){
-      return memberDetails.name;
+    getTripName: function(){
+      return trip.tripname;
     },
-    setEmail: function(email){
-      memberDetails.email = email;
-    },
-    getEmail: function(){
-      return memberDetails.email;
-    }
-  };
-})();
-
-
-ExpenseTracker.tripMModel= (function(){
-  var groupMembersList=[];
-  return {
-    addGroupMember: function(members){
-      groupMembersList = members;
+    addGroupMember: function(member){
+      trip.group.push(member);
     }
   }
-})();
+};
