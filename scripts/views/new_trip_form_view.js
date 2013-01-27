@@ -6,7 +6,7 @@ var newTripView = (function(){
         thisPageName = 'new-trip-form',
         bindEventListeners = function(){
           $("#submit-group").on('click',function(){
-            navigator.changePage("trip-overview");
+            //Update Model
           });
         };
       bindEventListeners();

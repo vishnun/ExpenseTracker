@@ -9,11 +9,11 @@
 </head>
 <body>
   <div id="header">
-    <h1>Expense Tracker (v1.0)</h1>
+    <h1><a href="#trips-list">Expense Tracker (v1.0)</a></h1>
   </div>
 
   <div id="trips-list">
-    <button id="add-new-trip-btn">Add New Trip</button>
+    <button id="add-new-trip-btn"><a href="#new-trip-form">Add New Trip</a></button>
     <ul id="available-trips">
       <li><a href="#">Trip 1</a></li>
       <li><a href="#">Trip 2</a></li>
@@ -37,7 +37,7 @@
       </li>
     </ul>
     <button id="add-new-member">Add Another Member</button>
-    <button id="submit-group">Submit</button>
+    <button id="submit-group"><a href="#trip-overview">Submit</a></button>
   </div>
 
   <div id="trip-overview">
@@ -110,6 +110,8 @@
 </body>
 
 <script type = "text/javascript" src="./lib/zepto.min.js"></script>
+<script type = "text/javascript" src="./scripts/models/constants.js"></script>
+
 <script type = "text/javascript" src="./scripts/models/member_model.js"></script>
 <script type = "text/javascript" src="./scripts/models/expense_model.js"></script>
 <script type = "text/javascript" src="./scripts/models/trip_model.js"></script>
