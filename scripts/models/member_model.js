@@ -13,11 +13,23 @@ var MemberModel = function(){
     getEmail: function(){
       return memberDetails.email;
     },
-    setPhone: function(email){
-      memberDetails.email = email;
+    setPhone: function(phone){
+      memberDetails.phone = phone;
     },
     getPhone: function(){
-      return memberDetails.email;
+      return memberDetails.phone;
+    },
+    setDetails: function(data){
+      if(!data){
+        alert('Data Not entered');
+        return;
+      }
+      if(data.name)
+        this.setName(data.name);
+      if(data.phone)
+        this.setPhone(data.phone);
+      if(data.email)
+        this.setPhone(data.email);
     }
   };
 };
